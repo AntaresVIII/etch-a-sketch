@@ -1,0 +1,20 @@
+body {
+    background-color: darkcyan;
+    color: white;
+}
+
+#grid {
+    border-style: solid;
+    border-width: 2px;
+    border-color: darkblue;
+    width: 600px;
+    height: 500px;
+    display: grid;
+    grid-template-columns: auto;
+    margin: auto;
+}
+div {
+    border-style: solid;
+    border-width: 2px;
+    border-color: red;
+}
