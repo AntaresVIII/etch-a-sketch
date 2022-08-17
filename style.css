@@ -1,24 +1,56 @@
 body {
-    background-color: darkcyan;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgb(78, 78, 78);
     color: white;
+    display: flex;
+    flex-direction: column;
+}
+h1 {
+    font-size: 21px;
+    margin: auto;
 }
 
-#container {
-    border-style: solid;
-    border-width: 2px;
-    border-color: darkblue;
-    width: 650px;
-    height: 650px;
-    margin: auto;
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: auto;
+#buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 40px;
+    margin: 9px auto 10px auto;
 }
-td {
+#container {
+    background-color: white;
+    display: grid;
     border-style: solid;
+    border-width: 1px;
+    border-color: black;
+    width: 90vh;
+    height: 80vh;
+    margin: auto;
+}
+.square {
+    background-color: white;
+    border-style: solid;
+    border-width: 0.5px;
+    border-color: black;
+    transition-duration: 0.33s;
+}
+button {
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+    background-color: white;
+    font-size: 14px;
+    border-radius: 10px;
+    height: 26px;
+    width: 125px;
+    font-weight: bold;
+}
+button:hover {
+    background-color: lightgray;
     border-width: 2px;
-    border-color: red;
-    max-width: 100px;
-    max-height: 100px;
-    display: inline-block;
+}
+footer {
+    font-size: 12px;
+    margin: 10px auto auto auto;
+    color: lightgray;
 }
